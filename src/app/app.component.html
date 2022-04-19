@@ -1,28 +1,29 @@
 <body>
     <div class="App">
+        <h1 class="h1">Calculator</h1>
         <div class="calculator-grid">
             <div class="output">
-                <div class="previous-operand"></div>
-                <div class="current-operand"></div>
+                <div class="previous-operand">{{input}}</div>
+                <div class="current-operand">{{result}}</div>
             </div>
-            <button class="span-two">AC</button>
-            <button>DEL</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>.</button>
-            <button>0</button>
-            <button class="span-two">=</button>
+            <button type="button" (click)="allClear()" class="span-two">AC</button>
+            <button type="button" (click)="clear()">DEL</button>
+            <button type="button" (click)="pressOperator('/')">/</button>
+            <button type="button" (click)="pressNum('7')">7</button>
+            <button type="button" (click)="pressNum('8')">8</button>
+            <button type="button" (click)="pressNum('9')">9</button>
+            <button type="button " (click)="pressOperator('*')">X</button>
+            <button type="button " (click)="pressNum('4')">4</button>
+            <button type="button " (click)="pressNum('5')">5</button>
+            <button type="button " (click)="pressNum('6')">6</button>
+            <button type="button " (click)="pressOperator('+')">+</button>
+            <button type="button " (click)="pressNum('1')">1</button>
+            <button type="button " (click)="pressNum('2')">2</button>
+            <button type="button " (click)="pressNum('3')">3</button>
+            <button type="button " (click)="pressOperator('-')">-</button>
+            <button type="button ">.</button>
+            <button type="button " (click)="pressNum('0')">0</button>
+            <button type="button " (click)="getAnswer()" class="span-two ">=</button>
         </div>
     </div>
 </body>
