@@ -20,7 +20,7 @@
         align-content: center;
         min-height: 80vh;
         grid-template-columns: repeat(4, 80px);
-        grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+        grid-template-rows: minmax(80px, auto) repeat(6, 80px);
     }
     
     .calculator-grid>button {
@@ -64,4 +64,15 @@
     .output .current-operand {
         color: #86313190;
         font-size: 2.5rem;
+    }
+    
+    .h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.2em
     }
